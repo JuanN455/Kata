@@ -4,9 +4,13 @@
  opponents, and had 36 goals scored against them). Write a program to print the name of the team with the smallest
  difference in ‘for’ and ‘against’ goals.
 =end
+colA = []
+colF = []
+colName = []
 file = File.open('football.dat')
 file.readlines.each do |line|
-  puts line
-index = line
-
+index = line.split(/\s+/)
+columF = index[6]
+columA = index[7]
+columName = index[2]
 end
